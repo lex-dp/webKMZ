@@ -1,0 +1,679 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>KMZ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/jquery.jscrollpane.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+    <div class="modal" id="Question">
+        <div class="modal-content">
+            <div class="modal-close"></div>
+            <h3>Задать вопрос</h3>
+            <form action="action.php">
+                <div class="form-row"><input type="text" name="name" placeholder="Ваше имя" value=""></div>
+                <div class="form-row"><input type="text" name="phone" placeholder="Контактный телефон" value=""></div>
+                <div class="form-row"><textarea name="message" placeholder="Ваше сообщение"></textarea></div>
+                <div class="message-error">
+                Поле «Ваше имя» обязательно для заполнения. <br>
+                Контактный телефон указан неверно.
+                </div>
+                <div class="message-valid">
+                    Ваше сообщение успешно отправлено!
+                </div>
+                <div class="action"><input type="submit" value="Отправить"></div>
+            </form>
+        </div>
+    </div>
+
+
+    <header id="header">
+
+       
+
+        <div class="header-bottom">
+
+            <div class="container">
+
+                <div id="logo">
+
+                    <a href="">
+                    <img src="../img/logo.png" alt="">
+                    <span>Красноармейский металлургический завод</span>
+                    </a>
+                </div>
+
+
+                 <div class="pull-left nav-container">
+                    <nav>
+                       
+                        <ul>
+                            <li><a href="">Прайс-лист</a></li>
+                            <li><a href="">О заводе</a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="">Справочник</a></li>
+                            <li class="active"><a href="">Марочник</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                
+
+                <div class="pull-right ">
+
+                    <div class="pull-left lang-container">
+                        
+                        <div class="language">
+
+                            <div class="label">Язык сайта:</div>
+
+                            <div class="current">Русский</div>
+                            <div class="list">
+                                <ul>
+                                    <li><a href="">Украинский</a></li>
+                                    <li><a href="">Русский</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="city" class="city">
+                        <div class="label">Выберите город:</div>
+                        <div class="current">Украина, Киев</div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="" data-city="moscow_russia">Россия, Санкт-Петербург</a></li>
+                                <li><a href="" data-city="kiev_ukraine">Украина, Киев</a></li>
+                                <li><a href="" data-city="minsk_belarus">Беларуссия, Минск</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contacts">
+                        <div class="phones">
+
+                        		<ul>
+                        			<li class="city-phone moscow_russia">
+                        				<span>+7(492) 392-06-71</span>
+                        		        <span>8(800) 333-03-10</span>
+                                        <a href="" class="email">info_moscow@kmz-ua.com</a>
+                        			</li>
+                        			<li class="city-phone active kiev_ukraine">
+                        				<span>+38(044) 392-06-71</span>
+                            		    <span>8(800) 333-03-10</span>
+                                        <a href="" class="email">info_kiev@kmz-ua.com</a>
+                        			</li>
+                        			<li class="city-phone minsk_belarus">
+                        				<span>+375(17) 392-06-71</span>
+                            		    <span>8(800) 333-03-10</span>
+                                        <a href="" class="email">info_minsk@kmz-ua.com</a>
+                        			</li>
+                        		</ul>
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="question">
+                        <a href="" class="yellow-btn modal-open" data-toggle="modal" data-target="#Question">Задать вопрос</a>
+                    </div>
+
+
+                </div>
+
+                <div class="clearfix"></div>
+
+                
+            
+            </div>
+
+
+        </div>
+        <!-- header-bottom -->
+
+        <div class="main-nav">
+
+            <div class="container clearfix">
+                <div class="nav pull-left">
+                    <ul class="ulslick">
+                    <!-- current: Пункт который указывает на данную страницу с вложенностью -->
+                    <!-- active: Пункт который указывает на развёрнутую группу -->
+                        <li><a href="" >Никелевые сплавы</a></li>
+                        <li class="current active parent"><a href="">Редкие и тугоплавкие металлы</a><i class="angle"></i>
+                            <ul data-bg="../img/dropomenu.png">
+                                <li class="current active"><a href="" class="current">Никелевые сплавы</a><i class="angle"></i>
+                                    
+                                    <ul>
+                                        <li><a href="">Никелевые сплавы 2</a></li>
+                                        <li class="current active"><a href="">Титан</a><i class="angle"></i>
+                                            <ul>
+                                                <li class="current active"><a href="">Никелевые сплавы 3</a><i class="angle"></i></li>
+                                                <li><a href="">Титан</a></li>
+                                                <li><a href="">Нержавеющая сталь</a></li>
+                                                <li><a href="">Редкие и тугоплавкие</a></li>
+                                                <li><a href="">Бронза, медь, латунь</a></li>
+                                                <li><a href="">Аллюминий</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Нержавеющая сталь</a></li>
+                                        <li><a href="">Редкие и тугоплавкие</a></li>
+                                        <li><a href="">Бронза, медь, латунь</a></li>
+                                        <li><a href="">Аллюминий</a></li>
+                                    </ul>
+                                    
+
+                                </li>
+                                <li><a href="">Редкие и тугоплавкие металлы</a></li>
+                                <li><a href="">Нержавеющая сталь</a></li>
+                                <li><a href="">Редкие и тугоплавкие</a></li>
+                                <li><a href="">Бронза, медь, латунь</a></li>
+                                <li><a href="">Цветные металлы</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Нержавеющая сталь</a>
+                            <ul data-bg="../img/dropomenu.png">
+                                <li><a href="">Никелевые сплавы</a></li>
+                                <li><a href="">Титан</a></li>
+                             
+                            </ul>
+                        </li>
+                        <li><a href="">Редкие и тугоплавкие</a></li>
+                        <li><a href="">Бронза, медь, латунь</a></li>
+                        <li><a href="">Аллюминий</a>
+                            <ul data-bg="../img/dropomenu.png">
+                                <li class="current"><a href="">Никелевые сплавы</a></li>
+                                <li><a href="">Титан</a></li>
+                                <li><a href="">Нержавеющая сталь</a></li>
+                                <li><a href="">Редкие и тугоплавкие</a></li>
+                                <li><a href="">Бронза, медь, латунь</a></li>
+                                <li><a href="">Аллюминий</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="search" class="pull-right ">
+                <i class="fi flaticon-search mobile-show"></i>
+                <input type="text" maxlength="20" placeholder="Поисковой запрос + Enter">
+                <button type="button" value=""><i class="fi flaticon-search"></i><span>Найти</span></button>
+                </div>
+
+
+            </div>
+        
+        </div>
+
+        <div class="top-slider">
+            <div class="top-slick">
+                <ul>
+                    <li>
+                        <div class="image" style="background-image: url(../img/slide.jpg)"></div>
+
+                        <div class="caption">
+                            Никелевые сплавы
+                        </div>
+                        <div class="subcaption">
+                            от лучших производителей мира!
+                        </div>
+
+                        <div class="buttons">
+                            <a href="" class="yellow-btn">Нихром и фехраль</a>
+                            <a href="" class="yellow-btn">Спецстали</a>
+                            <a href="" class="yellow-btn">Термолары проволока</a>
+                        </div>
+                        
+                    </li>
+                    <li>
+
+                        <div class="image" style="background-image: url(../img/slide.jpg)"></div>
+
+                        <div class="caption">
+                            Никелевые сплавы
+                        </div>
+                        <div class="subcaption">
+                            от лучших производителей мира!
+                        </div>
+
+                        <div class="buttons">
+                            <a href="" class="yellow-btn">Нихром и фехраль</a>
+                            <a href="" class="yellow-btn">Спецстали</a>
+                            <a href="" class="yellow-btn">Термолары проволока</a>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+    <div id="content">
+
+        <div class="benefits clearfix">
+            <h2>Почему именно мы? Неоспоримые преимущества</h2>
+
+            <ul>
+                <li>
+                    <div class="content">
+                        <div class="image"><i class="fi flaticon-big-stopwatch"></i></div>
+                        <div class="name">Бытрое производство продукции</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="image"><i class="fi flaticon-placeholder"></i></div>
+                        <div class="name">Офисы в разных странах</div>
+                    </div>
+                </li>
+                <li>
+                   <div class="content">
+                        <div class="image"><i class="fi flaticon-shipping"></i></div>
+                        <div class="name">Складское наличие</div>
+                   </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <div class="image"><i class="fi flaticon-iso-file-rounded-rectangular-outlined-interface-symbol"></i></div>
+                    <div class="name">Международные стандарты качества</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+
+            
+        <div class="tabs home-tabs clearfix">
+            <div class="nav">
+
+                <h2>Каталог продукции</h2>
+
+                <ul>
+                    <li class="active"><a href="#tab-1">Никелевые сплавы</a></li>
+                    <li><a href="#tab-2">Нержавейка, титан</a></li>
+                    <li><a href="#tab-3">Редкие и тугоплавкие</a></li>
+                    <li><a href="#tab-4">Цветные металлы</a></li>
+                    <li><a href="#tab-5">Легированная сталь</a></li>
+                    <li><a href="#tab-6">Сетки и соединения</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="tab-1" class="active">
+
+                    <h2>Никелевые сплавы</h2>
+
+                    <ul>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Нихром и фехраль</a>
+                            <ul>
+                                <li><a href="">Нихром</a></li>
+                                <li><a href="">Нихромовая проволока</a></li>
+                                <li><a href="">Фехраль</a></li>
+                                <li><a href="">Фехралевая проволока</a></li>
+                                <li><a href="">Нихромовый провод</a></li>
+                                <li><a href="">Нихромовая нить</a></li>
+                                <li><a href="">Справка: Никелевые сплавы</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+                <div id="tab-2">
+                    <h2>Нержавейка, титан</h2>
+                </div>
+                <div id="tab-3">
+                    <h2>Редкие и тугоплавкие</h2>
+                </div>
+                <div id="tab-4">
+                    <h2>Цветные металлы</h2>
+                </div>
+            </div>
+        </div>
+        <!-- hopme-tabs -->
+        
+        <div class="bottom-content clearfix">
+
+            <div class="table-bottom">
+
+
+                    <div class="box-news">
+
+                        <h2 class="clearfix">
+                            <span>Новости</span>
+                            <a href="#">Архив новостей</a>
+                        </h2>
+
+                        <div class="content">
+                            <div class="news-slick">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <a href="" class="name">Российское предприятие ЗАО «Северсталь-СМЦ –Всеволжск» наращивает объемы по переработке. Российское предприятие ЗАО «Северсталь-СМЦ –Всеволжск» наращивает объемы по переработке</a>
+                                            <div class="pub-date">12 декабря 2016</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="" class="name">Российское предприятие ЗАО «Северсталь-СМЦ –Всеволжск» наращивает объемы по переработке</a>
+                                            <div class="pub-date">12 декабря 2016</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="" class="name">Российское предприятие ЗАО «Северсталь-СМЦ –Всеволжск» наращивает объемы по переработке</a>
+                                            <div class="pub-date">12 декабря 2016</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <a href="" class="name">Российское предприятие ЗАО «Северсталь-СМЦ –Всеволжск» наращивает объемы по переработке</a>
+                                            <div class="pub-date">12 декабря 2016</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box-news -->
+
+                
+                    <div class="box-calculator">
+
+                        <h3>Калькулятор <br>маталлопроката</h3>
+
+                        <p>
+                            Удобный инструмент для расчета весовых показателей цветного и нержавеющего металлопроката в зависимости от его размеров.
+                        </p>
+
+                        <div class="button">
+                            <a href="" class="black-btn">Открыть калькулятор</a>
+                        </div>
+                        
+                    </div>
+                    <!-- box-calculator -->
+                
+
+            </div>
+
+        </div>
+        <!-- content-bottom -->
+
+        <div class="box-text clearfix">
+                <h2>Продажа нержавейки и цветнины</h2>
+
+
+
+                <div class="clearfix">
+                    <div class="part-visible">
+                    <p>Компания "МетПромСтар" поставляет цветной и нержавеющий металлопрокат от металлургических заводов России и зарубежья. Благодаря прямому сотрудничеству с производителями у нас продается нержавейка и цветные металлы по выгодной цене. Также мы проводим распродажи нержавейки, предоставляем разнообразные скидки на предлагаемую продукцию и оказываемые услуги. Каждого покупателя ожидает индивидуальный подход, быстрое и качественное обслуживание.</p>
+
+                    <p> Основным направлением нашей деятельности служит оптовая продажа металлопроката из нержавейки и цветных металлов. Мы стали постоянными партнерами для многих предприятий, потребляющих цветной и нержавеющий прокат в Москве и других регионах. В то же время мы активно развиваем розничную торговлю, выполняя относительно небольшие заказы физических и юридических лиц.</p>
+
+                    
+                </div>
+
+                <div>
+                    
+
+                    <p>Основным направлением нашей деятельности служит оптовая продажа металлопроката из нержавейки и цветных металлов. Мы стали постоянными партнерами для многих предприятий, потребляющих цветной и нержавеющий прокат в Москве и других регионах. В то же время мы активно развиваем розничную торговлю, выполняя относительно небольшие заказы физических и юридических лиц. <br>
+
+                    Ассортимент нержавеющей стали</p>
+
+                    <p>Нержавеющая сталь от компании "МетПромСтар" – это максимальный выбор товаров высокого качества. В нашем ассортименте представлены нержавеющие трубы, листовой и сортовой прокат, специальные стали, декоративная и пищевая нержавейка. Вниманию покупателей предлагается множество типоразмеров каждого изделия. По степени обработки поверхности в нашем каталоге выделяется матовая и зеркальная нержавейка, а по своим свойствам – жаропрочная нержавеющая сталь. Назначение и цена материала зависят от его характеристик. Значительным спросом у строителей пользуются листы с различными видами рифления. На нашем складе хранится рифленый нержавеющий металлопрокат любого типа. Также следует отметить спецсталь в виде инструментального и конструкционного металла.</p>
+
+                    <p>Мы предлагаем богатый ассортимент нержавеющей стали как по отечественному ГОСТ, так и зарубежные аналоги AISI. Выбрать нужные марки нержавейки можно в одноименном разделе нашего сайта.</p>
+                    
+
+                </div>
+
+                </div>
+
+                <div class="buttons"><a href="" class="show-more" data-def="Читать полностью" data-alt="Скрыть">Читать полностью</a></div>
+            </div>
+
+
+    </div>
+    <!-- content -->
+
+    <footer id="footer">
+        <div class="footer-top clearfix">
+
+            <div class="pull-left">
+                <div id="footer-logo"><a href="/"></a></div>
+                <div class="sitetitle">"Красноармейский металлургический завод"</div>
+                <div class="copyright">&copy; 1968-2016. Все права защищены.</div>
+            </div>
+
+            <div class="socials pull-right">
+                <div class="groups">
+                    <a href="" class="vk"></a>
+                    <a href="" class="twitter"></a>
+                    <a href="" class="gplus"></a>
+                </div>
+                <div class="likes">
+                    <a class="vk-likes" href=""></a>
+                    <a class="fb-likes" href=""></a>
+                    <a class="gplus-likes" href=""></a>
+                </div>
+            </div>
+
+            <div class="lang-mobile">
+                <div class="label">Язык сайта</div>
+
+                <div class="list">
+                    <ul>
+                        <li><a href="">Украинский</a></li>
+                        <li class="current"><a href="">Русский</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer-top -->
+
+        <div class="footer-bottom clearfix">
+            <ul>
+                <li>
+
+                    <a href="">Никелевые сплавы</a>
+
+                    <ul>
+                        <li><a href="">Нихром, фехраль, термлпары</a></li>
+                        <li><a href="">Прецизионные сплавы</a></li>
+                        <li><a href="">Евпропейские спецстали</a></li>
+                        <li><a href="">Гост спецстали</a></li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="">Бронза, латунь, медь</a>
+                    <ul>
+                        <li><a href="">Бронзовый прокат</a></li>
+                        <li><a href="">Европейские бронзы, сплавы меди</a></li>
+                        <li><a href="">Медно-никелевые сплавы</a></li>
+                        <li><a href="">Медный прокат</a></li>
+                        <li><a href="">Латунный прокат</a></li>
+                        <li><a href="">Европейская </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Тугоплавкие металлы</a>
+                    <ul>
+                        <li><a href="">Вольфрам</a></li>
+                        <li><a href="">Молибден</a></li>
+                        <li><a href="">Прокат редких металлов</a></li>
+                        <li><a href="">Редкие металлы</a></li>
+                        <li><a href="">Лантоиды</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Цветные металлы</a>
+                    <ul>
+                        <li><a href="">Алюминиевый прокат</a></li>
+                        <li><a href="">Дюралевый прокат</a></li>
+                        <li><a href="">Европейский алюминий</a></li>
+                        <li><a href="">Баббиты</a></li>
+                        <li><a href="">Припой</a></li>
+                        <li><a href="">Олово</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Никелевые сплавы</a>
+                    <ul>
+                        <li><a href="">Нихром, фехраль, термлпары</a></li>
+                        <li><a href="">Прецизионные сплавы</a></li>
+                        <li><a href="">Евпропейские спецстали</a></li>
+                        <li><a href="">Гост спецстали</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Бронза, латунь, медь</a>
+                    <ul>
+                        <li><a href="">Бронзовый прокат</a></li>
+                        <li><a href="">Европейские бронзы, сплавы меди</a></li>
+                        <li><a href="">Медно-никелевые сплавы</a></li>
+                        <li><a href="">Медный прокат</a></li>
+                        <li><a href="">Латунный прокат</a></li>
+                        <li><a href="">Европейская </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Тугоплавкие металлы</a>
+                    <ul>
+                        <li><a href="">Вольфрам</a></li>
+                        <li><a href="">Молибден</a></li>
+                        <li><a href="">Прокат редких металлов</a></li>
+                        <li><a href="">Редкие металлы</a></li>
+                        <li><a href="">Лантоиды</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Цветные металлы</a>
+                    <ul>
+                        <li><a href="">Алюминиевый прокат</a></li>
+                        <li><a href="">Дюралевый прокат</a></li>
+                        <li><a href="">Европейский алюминий</a></li>
+                        <li><a href="">Баббиты</a></li>
+                        <li><a href="">Припой</a></li>
+                        <li><a href="">Олово</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script>
+        var mobileNavTitle = 'Навигация по сайту';
+        var mobileMainNavTitle = 'Виды металлопроката';
+    </script>
+
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="../js/jquery.slick.min.js"></script>
+        <script src="../js/jquery.jscrollpane.min.js"></script>
+        <script src="../js/common.plugins.js"></script>
+        <script src="../js/common.main.js"></script>
+
+        
+    </body>
+</html>
