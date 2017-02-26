@@ -2994,8 +2994,9 @@ body.modalOverflow {
 .tabs .directory-nav {
   margin-top: 27px;
   width: 20%;
-  min-width: 305px;
-  margin-bottom: 15px; }
+  min-width: 335px;
+  margin-bottom: 15px;
+  margin-right: 0; }
 
 .tabs .directory-content {
   box-shadow: none;
@@ -3019,7 +3020,7 @@ body.modalOverflow {
     margin: 30px 0 15px 0; }
 
 .consultants {
-  background-color: green;
+  background-color: #2ecd71;
   width: 20%;
   min-width: 335px;
   padding: 30px 20px 30px 30px;
@@ -3028,7 +3029,7 @@ body.modalOverflow {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px; }
   .consultants h2 {
-    color: white;
+    color: #fffefe;
     width: 285px;
     margin: 0 auto; }
   .consultants .buttons {
@@ -3040,7 +3041,7 @@ body.modalOverflow {
     font-size: 19px; }
 
 .consultant-info {
-  color: white;
+  color: #fffefe;
   width: 285px;
   margin: 15px auto; }
   .consultant-info img {
@@ -3069,6 +3070,15 @@ body.modalOverflow {
     width: 285px;
     margin: 0 auto;
     margin-bottom: 15px; }
+    .calculate-wrapper .calculate a:hover {
+      background-color: #696969;
+      color: #ffd93b; }
+  .calculate-wrapper .calculator {
+    background: url(../img/calculate.png) -25px -39px #ffd93b no-repeat;
+    padding-left: 60px; }
+  .calculate-wrapper .calculation {
+    background: url(../img/calculate.png) -25px -160px #ffd93b no-repeat;
+    padding-left: 60px; }
 
 @media (min-width: 1919px) {
   .tabs .directory-content > div > ul > li {
@@ -3082,14 +3092,43 @@ body.modalOverflow {
 @media (max-width: 1279px) {
   .tabs .directory-nav {
     width: 100%; }
+    .tabs .directory-nav ul li {
+      background-color: #ebebeb;
+      margin-right: 15px;
+      margin-top: 15px;
+      border-radius: 6px; }
+      .tabs .directory-nav ul li a {
+        box-shadow: 0px 3px 0 #595959;
+        border-radius: 6px; }
   .tabs .directory-content {
     width: 100%;
     float: none; }
     .tabs .directory-content h2 {
       text-align: center; }
 
+  .consultants-wrapper {
+    padding: 0 23px; }
+
   .consultants {
-    width: 100%; }
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px 20px 20px 30px; }
+    .consultants h2 {
+      font-size: 20px;
+      text-align: center; }
+    .consultants .consultant-info {
+      width: 200px; }
+      .consultants .consultant-info img {
+        border: 5px solid white;
+        border-radius: 50px;
+        width: 70px; }
+      .consultants .consultant-info p {
+        padding-top: 5px; }
+      .consultants .consultant-info .consultant-telephone {
+        text-align: center;
+        padding-top: 10px; }
+    .consultants .buttons {
+      margin-top: -12px; }
 
   .calculate-wrapper {
     width: 100%;
@@ -3099,14 +3138,55 @@ body.modalOverflow {
       text-align: center; }
       .calculate-wrapper .calculate a {
         display: inline-block;
-        margin: 0 15px 0px 15px; } }
+        margin: 0 12px 0px 12px;
+        width: 345px; }
+      .calculate-wrapper .calculate .calculator {
+        background: url(../img/calculate.png) 49px -39px #ffd93b no-repeat;
+        padding-left: 50px; }
+      .calculate-wrapper .calculate .calculation {
+        background: url(../img/calculate.png) 25px -160px #ffd93b no-repeat;
+        padding-left: 50px; } }
 @media (max-width: 767px) {
   .tabs .directory-content > div > ul > li {
     width: 100%;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+
+  .calculate-wrapper .calculate {
+    width: 285px;
+    margin: 0 auto;
+    text-align: left; }
+    .calculate-wrapper .calculate a {
+      width: 285px;
+      margin: 0 0 15px 0; }
+    .calculate-wrapper .calculate .calculator {
+      background: url(../img/calculate.png) -20px -39px #ffd93b no-repeat;
+      padding-left: 60px; }
+    .calculate-wrapper .calculate .calculation {
+      background: url(../img/calculate.png) -24px -160px #ffd93b no-repeat;
+      padding-left: 60px; } }
 @media (max-width: 400px) {
   .tabs .directory-content {
-    text-align: left; } }
+    text-align: left; }
+
+  .consultants-wrapper {
+    padding: 0 15px; }
+    .consultants-wrapper .consultants {
+      min-width: 300px; }
+      .consultants-wrapper .consultants h2 {
+        font-size: 17px;
+        width: 250px; }
+      .consultants-wrapper .consultants .buttons {
+        width: 250px; }
+        .consultants-wrapper .consultants .buttons a {
+          font-size: 17px; }
+
+  .calculate-wrapper {
+    min-width: 300px; }
+    .calculate-wrapper .calculate {
+      width: 300px; }
+      .calculate-wrapper .calculate a {
+        width: 100%;
+        font-size: 17px; } }
 /*End of directory page*/
 
 /*# sourceMappingURL=main.css.map */
