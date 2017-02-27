@@ -4398,6 +4398,13 @@ body.modalOverflow{
 
 
 /*Start of directory page*/
+	
+	/*Class for JS toogle.js , it's show or hide list on click*/
+	.toogleChildren {
+		display: none;
+		    transition: all .3s;
+	}
+	
 	.breadcrumbs-wrapper {
 		background-color: #ffd93b;	
 		min-height: 62px;
@@ -4494,6 +4501,7 @@ body.modalOverflow{
 				color: $consultantsColor;
 				width: $buttonsWidth;
 				margin: 0 auto;
+				font-size: 23px;
 			}
 			
 			.buttons {
@@ -4686,6 +4694,11 @@ body.modalOverflow{
 		}
 		
 		@media (max-width: 767px) {
+			
+			.breadcrumbs-wrapper {
+				display: none;
+			}
+			
 			.tabs .directory-content > div > ul > li {
 				width: 100%;
 				margin-bottom: 40px;				
@@ -4719,16 +4732,26 @@ body.modalOverflow{
 		}
 		
 		@media (max-width: 400px) {
-		
+			
+						
 			
 			.tabs  {					
 				.directory-content {
 					text-align: left;
 				}
+				
+				.directory-nav {
+					min-width: 300px;
+					
+					ul li {
+						margin-right: 0;
+					}
+				}
+				
 			}
 			
 			.consultants-wrapper {
-				padding: 0 15px;
+				padding: 0 10px;
 
 				.consultants {
 					min-width: 300px;

@@ -2970,6 +2970,11 @@ body.modalOverflow {
   h3 {
     page-break-after: avoid; } }
 /*Start of directory page*/
+/*Class for JS toogle.js , it's show or hide list on click*/
+.toogleChildren {
+  display: none;
+  transition: all .3s; }
+
 .breadcrumbs-wrapper {
   background-color: #ffd93b;
   min-height: 62px; }
@@ -3031,7 +3036,8 @@ body.modalOverflow {
   .consultants h2 {
     color: #fffefe;
     width: 285px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 23px; }
   .consultants .buttons {
     text-align: center;
     width: 285px;
@@ -3147,6 +3153,9 @@ body.modalOverflow {
         background: url(../img/calculate.png) 25px -160px #ffd93b no-repeat;
         padding-left: 50px; } }
 @media (max-width: 767px) {
+  .breadcrumbs-wrapper {
+    display: none; }
+
   .tabs .directory-content > div > ul > li {
     width: 100%;
     margin-bottom: 40px; }
@@ -3167,9 +3176,13 @@ body.modalOverflow {
 @media (max-width: 400px) {
   .tabs .directory-content {
     text-align: left; }
+  .tabs .directory-nav {
+    min-width: 300px; }
+    .tabs .directory-nav ul li {
+      margin-right: 0; }
 
   .consultants-wrapper {
-    padding: 0 15px; }
+    padding: 0 10px; }
     .consultants-wrapper .consultants {
       min-width: 300px; }
       .consultants-wrapper .consultants h2 {
